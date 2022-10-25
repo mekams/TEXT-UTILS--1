@@ -46,7 +46,7 @@ export default function Form(props) {
   return (
   <>
     <div className="container my-3" style={{color: props.mode==="dark"?"white":"black"}}>   {/*if dark=>white color else black */}
-        <h1>{props.heading}</h1>
+        <h2>{props.heading}</h2>
         <div className="mb-3">
         <textarea className="form-control" id="box" value={text} onChange={handleOnChange} placeholder="Enter your text in this box" style={{backgroundColor:props.mode==="dark"?"#0b1239":"white", color: props.mode==="dark"?"white":"black"}} rows= "4"></textarea>
         </div>
