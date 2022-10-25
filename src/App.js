@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <Navbar title="Text-Utils" mode= {mode} toggleMode={toggleMode}/>
-      <Form heading="Enter the text below to manipulate:" mode={mode}/>
+      <Form heading="Convert text :" mode={mode}/>
       <Footer mode= {mode}/>
       {/* <About/> */}
     </>
