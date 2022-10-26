@@ -15,7 +15,7 @@ function App() {
      })
      setTimeout(() => {
       setAlert(null)                         //async timeout for alert display, time mentioned in milliseconds
-     }, 1800);
+     }, 2200);
  }
 
   const [mode, setMode] = useState("light")     

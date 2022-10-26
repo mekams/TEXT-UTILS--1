@@ -30,7 +30,7 @@ export default function Form(props) {
     let handleSpaces = () =>{              //remove extra spaces between words
       let newText = text.split(/[ ]+/)
       setText(newText.join(" "))
-      props.showAlert("Extra spaces cleared","success") 
+      props.showAlert("Extra space cleared","success") 
 
     }
 
