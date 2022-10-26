@@ -7,8 +7,7 @@ export default function Alert(props) {
         }
   return (
     props.alert && <div class={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">
-    <strong class="spinner-border text-success" role="status">{capital(props.alert.type)}: </strong>{props.alert.msg}                 {/*message popup */}
-
+    <strong>{capital(props.alert.type)}: </strong>{props.alert.msg}                 {/*message popup */}
     {/* <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> */}
     </div>
  );
