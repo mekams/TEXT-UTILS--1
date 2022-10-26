@@ -34,7 +34,7 @@ function App() {
     <>
       <Navbar title="Text-Utils" mode= {mode} toggleMode={toggleMode}/>
       <Alert alert={alert}/>
-      <Form heading="Convert your text :" mode={mode}/>
+      <Form heading="Convert your text :" mode={mode} showAlert={showAlert}/>
       <Footer mode= {mode}/>    
       {/* <About/> */}
     </>

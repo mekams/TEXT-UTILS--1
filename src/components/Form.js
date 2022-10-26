@@ -12,27 +12,33 @@ export default function Form(props) {
       // console.log("Uppercase Clicked "+ text)
       let newText = text.toUpperCase()
       setText(newText)
+      props.showAlert("Changed to uppercase","success")  //pre-capital+prop used to pop up alert
   }
 
     let handleDownclick = () =>{
       let newText = text.toLowerCase()    //to lowercase
       setText(newText)
+      props.showAlert("Changed to lowercase","success") 
     }
 
     let handleClearclick = () =>{       //clear the text area
      let newText = ""
      setText(newText)
+     props.showAlert("Text cleared","success") 
     }
 
     let handleSpaces = () =>{              //remove extra spaces between words
       let newText = text.split(/[ ]+/)
       setText(newText.join(" "))
+      props.showAlert("Extra spaces cleared","success") 
+
     }
 
     let handleClip = () =>{                           //copies text to clipboard
       let selText = document.getElementById("box")    //get the text area inner text by id
       selText.select()                                  //select text in text area
       navigator.clipboard.writeText(selText.value)      //copies to clipboard
+      props.showAlert("Copied to clipboard","success") 
     }
 
     let handleCapital = () =>{
@@ -41,6 +47,7 @@ export default function Form(props) {
         arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);     //first lettter to capital and splice add rest of string as it its in lowercase
       }
       setText(arr.join(" "))      //joins array with spaces and sentence transformed
+      props.showAlert("Text capitalized","success") 
     }
 
   return (
