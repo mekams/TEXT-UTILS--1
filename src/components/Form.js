@@ -9,7 +9,7 @@ export default function Form(props) {
     }
 
      // const [ourtext, setOurtext] = useState("")
-     let msg =new SpeechSynthesisUtterance()      //constructor, which will contain our speech data and information on how the application should handle it.(an Object with msg variable assigned to constructor)
+     let msg =new SpeechSynthesisUtterance()      //constructor, which will contain our speech data and information on how the application should handle it.(msg.text is an Object with msg variable assigned to constructor)
      let handleSpeech = (msg) =>{
         msg.text = text
         window.speechSynthesis.speak(msg)   // function which reads aloud the text stored in the msg.text variable

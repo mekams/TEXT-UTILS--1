@@ -33,7 +33,6 @@ export default function About(props) {
 
   return (
     <>
-    <p className="container"> Hello</p>
     <div className="container my-5" style={{backgroundColor:props.mode==="dark"?"#0b1239":"white", color: props.mode==="dark"?"white":"black"}}>
       <div className="accordion accordion-flush" id="accordionFlushExample">
         <div className="accordion-item">
