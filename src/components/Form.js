@@ -73,12 +73,12 @@ export default function Form(props) {
         <textarea className="form-control" id="box" value={text} onChange={handleOnChange} placeholder="Enter your text in this box" style={{backgroundColor:props.mode==="dark"?"#0b1239":"white", color: props.mode==="dark"?"white":"black"}} rows= "4"></textarea>
         </div>
         <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" title="eg: HELLO WORLD" onClick={handleUpclick}>To Uppercase</button>
-        <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" title='eg: "hello world"' onClick={handleDownclick}>To lowercase</button>  
+        <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" title='eg: "hello world"' onClick={handleDownclick}>To Lowercase</button>  
         <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" title='eg: "Hello World"' onClick={handleCapital}>Capitalise Text</button>
-        <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" title='Listen the text you have written in text area' onClick={handleOnspeech}>Text to speech</button>
+        <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" title='Listen the text you have written in text area' onClick={handleOnspeech}>Text to Speech</button>
         <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" title='Copies to the clipboard and paste anywhere' onClick={handleClip}>Copy to Clipboard</button>
-        <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" title='Single space per word' onClick={handleSpaces}>Delete spaces</button>
-        <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" title='Blank the text area' onClick={handleClearclick}>Clear text</button>
+        <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" title='Single space per word' onClick={handleSpaces}>Delete Spaces</button>
+        <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" title='Blank the text area' onClick={handleClearclick}>Clear Text</button>
     </div>
     <div className="container my-4" style={{color: props.mode==="dark"?"white":"black"}}>
       <h4>Summary of the above text :</h4>

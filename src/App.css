@@ -1,3 +1,14 @@
 li .active{
     font-weight: bold;
 }
+
+.col-sm-4{
+    display:block
+}
+
+@media (max-width:990px) {
+    .col{
+        display:block;
+        margin:10px 0px;
+    } 
+}
