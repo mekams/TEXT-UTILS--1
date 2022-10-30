@@ -118,32 +118,32 @@ export default function About(props) {
     </div>
 
     <div className= "container">
-      <div className="row ">
+      <div className="row">
         <div className="col-sm-4">
-          <div className="card" style={{width: "22rem"}}>
+          <div className="card" style={{width: "15rem"}}>
             <img src={img1} className="card-img-top" alt=""/>
                 <div className="card-body" style={{backgroundColor:props.mode==="dark"?"#0b1239":"white", color: props.mode==="dark"?"white":"black"}}>
-                    <h5 className="card-title">Click below</h5>
+                    <h5 className="card-title">Feature I :- Enable the Dark Mode</h5>
                     <p className="card-text">Manipulate text and enjoy conversion</p>
                     <Link to="/" className="btn btn-primary">Redirect to home</Link>
                 </div>
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card" style={{width: "22rem"}}>
+          <div className="card " style={{width: "15rem"}}>
             <img src={img1} className="card-img-top" alt=""/>
                 <div className="card-body" style={{backgroundColor:props.mode==="dark"?"#0b1239":"white", color: props.mode==="dark"?"white":"black"}}>
-                    <h5 className="card-title">Click below</h5>
+                    <h5 className="card-title">Feature II :- Bot will read your paragraph</h5>
                     <p className="card-text">Manipulate text and enjoy conversion</p>
                     <Link to="/" className="btn btn-primary">Redirect to home</Link>
                 </div>
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card" style={{width: "22rem"}}>
+          <div className="card" style={{width: "15rem"}}>
             <img src={img1} className="card-img-top" alt="Dancing Robo"/>
                 <div className="card-body" style={{backgroundColor:props.mode==="dark"?"#0b1239":"white", color: props.mode==="dark"?"white":"black"}}>
-                    <h5 className="card-title">Click below</h5>
+                    <h5 className="card-title">Feature III :- Preview the text</h5>
                     <p className="card-text">Manipulate text and enjoy conversion</p>
                     <Link to="/" className="btn btn-primary">Redirect to home</Link>
                 </div>
@@ -151,6 +151,7 @@ export default function About(props) {
         </div>
       </div> 
       </div>
+      <br /><br /><br />
     </>
   )
 }

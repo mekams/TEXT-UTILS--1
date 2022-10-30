@@ -49,10 +49,10 @@ export default function Form(props) {
     }
 
     let handleClip = () =>{                           //copies text to clipboard
-      let selText = document.getElementById("box")    //get the text area inner text by id
-      selText.select()                                  //select text in text area
-      navigator.clipboard.writeText(selText.value)      //copies to clipboard
-      document.getSelection().removeAllRanges()
+      // let selText = document.getElementById("box")    //get the text area inner text by id
+      // selText.select()                                  //select text in text area
+      navigator.clipboard.writeText(text)      //copies to clipboard
+      // document.getSelection().removeAllRanges()
       props.showAlert("Copied to clipboard","success") 
     }
 
@@ -82,14 +82,16 @@ export default function Form(props) {
     </div>
     <div className="container my-4" style={{color: props.mode==="dark"?"white":"black"}}>
       <h4>Summary of the above text :</h4>
-      <p ><b>{text.length===0?0:text.split(" ").length}</b> Words and <b>{text.length}</b> Characters</p>
+      <p ><b>{text.length===0?0:text.split(/\s+/).length}</b> Words and <b>{text.length}</b> Characters</p>
       <p><b>{text.length===0?0:0.008 * text.split(" ").length}</b> Minutes required to read on average.</p><hr/><br/>   
       <h3>Text Preview</h3>
       <p>{text.length===0?"Nothing to preview. 🚫 🤷‍♂️":text}</p>
     </div>
+    <br />
     <div className="container" >
-          <img src ={img2} className="img-fluid" width="150px" alt="Text-Utility Gif"/>
+         <img src ={img2} className="img-fluid" width="150px" alt="Text-Utility Gif"/>
     </div>
+    <br /><br />
   </>
   )
 }

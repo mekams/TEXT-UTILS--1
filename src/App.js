@@ -1,11 +1,12 @@
 import "./App.css";
 import React, { useState } from "react";
-// import { useEffect } from "react";
+// import { useEffect } from "react";           // By this Hook, you tell React that your component needs to do something after render.
 import Navbar from "./components/Navbar";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
 import Alert from "./components/Alert";
 import About from "./components/About";
+// import { NavLink } from "react-router-dom";
 
 
 
@@ -18,7 +19,7 @@ import {
 function App() {
   const [alert, setAlert] = useState(null); //initial alert set to null
   let showAlert = (message, type) => {
-    // parameters for alets
+    // parameters for alerts
     setAlert({
       msg: message, //object created
       type: type,
