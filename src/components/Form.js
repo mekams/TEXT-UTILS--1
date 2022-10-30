@@ -59,7 +59,7 @@ export default function Form(props) {
     let handleCapital = () =>{
       let arr = text.split(" ")                                         //splits sentence words in to an array of substring
       for (let i = 0; i < arr.length; i++) {                            //iterates over each array of substrings
-        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);     //first lettter to capital and splice add rest of string as it its in lowercase
+        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1,);     //first lettter to capital and splice add rest of string as it its in lowercase
       }
       setText(arr.join(" "))      //joins array with spaces and sentence transformed
       props.showAlert("Text capitalized","success") 
@@ -70,7 +70,7 @@ export default function Form(props) {
     <div className="container my-3" style={{color: props.mode==="dark"?"white":"black"}}>   {/*if dark=>white color else black */}
         <h2>{props.heading}</h2>
         <div className="mb-3">
-        <textarea className="form-control" id="box" value={text} onChange={handleOnChange} placeholder="Enter your text in this box" style={{backgroundColor:props.mode==="dark"?"#0b1239":"white", color: props.mode==="dark"?"white":"black"}} rows= "4"></textarea>
+        <textarea className="form-control" id="box" value={text} onChange={handleOnChange} placeholder="Enter your text in this box" style={{backgroundColor:props.mode==="dark"?"#0b1239":"white", color: props.mode==="dark"?"white":"black"}} rows= "3"></textarea>
         </div>
         <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" title="eg: HELLO WORLD" onClick={handleUpclick}>To Uppercase</button>
         <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" title='eg: "hello world"' onClick={handleDownclick}>To Lowercase</button>  
