@@ -59,9 +59,7 @@ function App() {
           <Route exact path="/about" element={<About mode={mode} />}/>     {/*exact path means to the exact keyword which is written in address */}
           <Route exact path="/" element={<Form heading="Convert your text :" mode={mode} showAlert={showAlert}/>}/>
         </Routes>
-        <img src = "components\TextUtils-GIF.gif\" class="img-fluid" alt="Text-Utility Gif"/>
         <Footer mode={mode} />
-
       </Router>
     </>
   );

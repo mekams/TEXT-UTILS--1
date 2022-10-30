@@ -1,5 +1,8 @@
 // import React,{useState} from "react";  //hook imported
-import React from "react";
+import React from "react"
+import { Link } from "react-router-dom"
+import img1 from  './images/text2.gif'
+
 
 export default function About(props) {
     // const [btn, setBtn] = useState("Enable Dark Mode")                  //transition of button from light to dark  & vice-versa
@@ -45,7 +48,7 @@ export default function About(props) {
               aria-expanded="false"
               aria-controls="flush-collapseOne"
             >
-            Biggest Myth
+            Fact #1
             </button>
           </h2>
           <div
@@ -70,7 +73,7 @@ export default function About(props) {
               aria-expanded="false"
               aria-controls="flush-collapseTwo"
             >
-              Fact #1
+              Fact #2
             </button>
           </h2>
           <div
@@ -94,7 +97,7 @@ export default function About(props) {
               aria-expanded="false"
               aria-controls="flush-collapseThree"
             >
-              Fact #2
+              Fact #3
             </button>
           </h2>
           <div
@@ -113,6 +116,41 @@ export default function About(props) {
         <button className={bColor} onClick={switchB}>{btn}</button>     {/*onclick function as well as button set using state}
       </div> */}
     </div>
+
+    <div className= "container">
+      <div className="row ">
+        <div className="col-sm-4">
+          <div className="card" style={{width: "22rem"}}>
+            <img src={img1} className="card-img-top" alt=""/>
+                <div className="card-body" style={{backgroundColor:props.mode==="dark"?"#0b1239":"white", color: props.mode==="dark"?"white":"black"}}>
+                    <h5 className="card-title">Click below</h5>
+                    <p className="card-text">Manipulate text and enjoy conversion</p>
+                    <Link to="/" className="btn btn-primary">Redirect to home</Link>
+                </div>
+          </div>
+        </div>
+        <div className="col-sm-4">
+          <div className="card" style={{width: "22rem"}}>
+            <img src={img1} className="card-img-top" alt=""/>
+                <div className="card-body" style={{backgroundColor:props.mode==="dark"?"#0b1239":"white", color: props.mode==="dark"?"white":"black"}}>
+                    <h5 className="card-title">Click below</h5>
+                    <p className="card-text">Manipulate text and enjoy conversion</p>
+                    <Link to="/" className="btn btn-primary">Redirect to home</Link>
+                </div>
+          </div>
+        </div>
+        <div className="col-sm-4">
+          <div className="card" style={{width: "22rem"}}>
+            <img src={img1} className="card-img-top" alt="Dancing Robo"/>
+                <div className="card-body" style={{backgroundColor:props.mode==="dark"?"#0b1239":"white", color: props.mode==="dark"?"white":"black"}}>
+                    <h5 className="card-title">Click below</h5>
+                    <p className="card-text">Manipulate text and enjoy conversion</p>
+                    <Link to="/" className="btn btn-primary">Redirect to home</Link>
+                </div>
+          </div>
+        </div>
+      </div> 
+      </div>
     </>
-  );
+  )
 }
