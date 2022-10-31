@@ -12,3 +12,7 @@ li .active{
         margin:10px 0px;
     } 
 }
+
+.accordion-button::after{
+    filter:invert(1);
+}
