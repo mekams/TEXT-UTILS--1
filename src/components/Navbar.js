@@ -15,10 +15,10 @@ export default function Navbar(props) {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <NavLink className="nav-link" aria-current="page" to="/" activeClassName="active" end>Home</NavLink>
+            <NavLink className="nav-link" aria-current="page" to="/" activeClassName="active" end>Home</NavLink>   {/* Link is used when no highlighting is needed */}
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/about" activeClassName="active" end>{props.about}</NavLink>
+            <NavLink className="nav-link" to="/about" activeClassName="active" end>{props.about}</NavLink>         {/* NavLink is used when highlighting is needed for active links i.e Navbar*/}   
           </li>
         </ul>
         {/* <form className="d-flex" role="search">

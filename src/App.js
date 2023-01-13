@@ -54,7 +54,7 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar title="Text-Utils" mode={mode} toggleMode={toggleMode} />
+        <Navbar title="Text-Utility" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <Routes>
           <Route exact path="/about" element={<About mode={mode} />}/>     {/*exact path means to the exact keyword which is written in address */}

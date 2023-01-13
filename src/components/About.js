@@ -145,7 +145,7 @@ export default function About(props) {
                 <div className="card-body" style={{backgroundColor:props.mode==="dark"?"#0b1239":"white", color: props.mode==="dark"?"white":"black"}}>
                     <h5 className="card-title">Feature III :- Preview the text</h5>
                     <p className="card-text">Manipulate text and enjoy conversion</p>
-                    <Link to="/" className="btn btn-primary">Redirect to Home</Link>
+                    <Link to="/" className="btn btn-primary">Redirect to Home</Link>    {/* Link is used when no highlighting is needed */}
                 </div>
           </div>
         </div>
