@@ -9,7 +9,7 @@
     * Text cpopied to clipboard and capitalize the text too.
     * You can preview your text.
     * Clear the text bocx area.
-    * Dancing robot is ffor entertainment purpose and downloaded from google images.
+    * Dancing robot is for entertainment purpose and downloaded from google images.
 
 - If any bugs, feel free to contribute to the code
              
