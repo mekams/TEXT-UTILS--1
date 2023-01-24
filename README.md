@@ -18,8 +18,8 @@
 
 <img width="1111" alt="image" src="https://user-images.githubusercontent.com/100461901/214263640-014769da-1902-49e4-a885-cfb378a4fd71.png">
 
-*live link*
-https://textu.netlify.app/
+# -*live link*
+:> https://textu.netlify.app/
              
              --------------------> Thanks <------------------
 # ----------😃  Enjoy the website text converter utility  😃----------
