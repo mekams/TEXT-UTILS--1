@@ -1,4 +1,4 @@
-# Intro by Kamran: deployed via netlify and uploaded to github
+# -Intro by Kamran: deployed via netlify and uploaded to github
 - This ia text utility app which supports english language .
 - Router is also used in this app.
 - Following are the features:
